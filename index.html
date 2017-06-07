@@ -125,7 +125,8 @@
                             $(`#delete_${image_num}`).on('click', function(){
                                 console.log('alkgoy');
                                 $(this).parent().fadeOut("slow");
-                                $(this).parent().remove()
+                                // $(this).parent().remove()
+                                setTimeout('$(this).parent().remove()',400);
                                 $('html, body').animate({
                                    scrollTop: $('#about').offset().top
                                }, 'slow');
